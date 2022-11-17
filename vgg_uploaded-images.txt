@@ -1,0 +1,95 @@
+Pet image folder: uploaded_images/ 
+Architecture: vgg 
+Dog name file: dognames.txt
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 6 key-value pairs.
+Below are 6 of them:
+ 1 key:               Chihuahua_02.jpg  label:                  chihuahua
+ 2 key:               Chihuahua_01.jpg  label:                  chihuahua
+ 3 key:             Pasune_pipe_01.jpg  label:                pasune pipe
+ 4 key:                   Snail_01.jpg  label:                      snail
+ 5 key:                     Dog_02.jpg  label:                        dog
+ 6 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+              Chihuahua_02.jpg: 
+Real:                  chihuahua   Classifier:                      chihuahua
+
+              Chihuahua_01.jpg: 
+Real:                  chihuahua   Classifier:                      chihuahua
+
+                  Snail_01.jpg: 
+Real:                      snail   Classifier:                          snail
+
+ NOT A MATCH:
+
+            Pasune_pipe_01.jpg: 
+Real:                pasune pipe   Classifier:                cocktail shaker
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                      chihuahua
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                      chihuahua
+
+# Total Images 6 # Matches: 3 # NOT Matches: 3
+
+     MATCH:
+
+              Chihuahua_02.jpg: 
+Real:                  chihuahua   Classifier:                      chihuahua  
+PetLabelDog: 1  ClassLabelDog: 1
+
+              Chihuahua_01.jpg: 
+Real:                  chihuahua   Classifier:                      chihuahua  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                  Snail_01.jpg: 
+Real:                      snail   Classifier:                          snail  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+            Pasune_pipe_01.jpg: 
+Real:                pasune pipe   Classifier:                cocktail shaker  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                      chihuahua  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                      chihuahua  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 6 # Matches: 3 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  6  N Dog Images:  4  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  6  N Dog Images:  4  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   6
+N Dog Images        :   4
+N Not-Dog Images    :   2
+ 
+pct_match : 50.0
+pct_correct_dogs : 100.0
+pct_correct_breed : 50.0
+pct_correct_notdogs : 100.0
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:                      chihuahua
+Real:                        dog   Classifier:                      chihuahua
+
+** Total Elapsed Runtime: 0:0:5
