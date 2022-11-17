@@ -1,7 +1,7 @@
 # AWS-Python-Nanodegree-Program-Image-Classifier-for-Dog-Breeds
 
 This is a project from my Udacity profile.
-In the course, we were supplied with a pre-trained dog breed classificator and then had to supplement it with our own functions according to specifications.
+In the course, we were supplied with a pre-trained dog breed classificator and then had to supplement it with our own code according to specifications to complete the project.
 
 More specifically, I needed to code the following functions: 
 - time the code processing time
@@ -10,10 +10,12 @@ More specifically, I needed to code the following functions:
 - compare the pet image label and the classificator label
 - add classifying labels as Dogs and Non-Dogs
 - calculate results
-- calculate precision stats for three different architectures
+- calculate precision stats for three different architectures (vvg, resnet, and alexnet)
 - printing results
 
 I also had to 
 - compare the three different architectures to define which is the best
 - upload my own dog- and non-dog-images and run the classifier on them
 - compare the performance of the three architectures on my own data
+
+The main program is check_images.py
